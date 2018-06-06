@@ -27,6 +27,7 @@ class Transfer
   def reverse_transfer
     @sender.balance += @amount
     @receiver.balance -= @amount
+    self.statue = "reversed" 
   end
 
 end
