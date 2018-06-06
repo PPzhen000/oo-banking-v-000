@@ -21,7 +21,7 @@ describe "BankAccount" do
       end
 
       it "can't change its name" do
-        expect { avi.name = "Bob" }.to raise_error("oops,you can't change the name")
+        expect { avi.name = "Bob" }.to raise_error(NoMethodError: undefined method `name=')
       end
     end
   end
