@@ -18,7 +18,7 @@ class BankAccount
   end
 
   def valid?
-
+    @statue == "open" && @balance > 0 
   end
 
   def close_account
