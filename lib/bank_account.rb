@@ -9,8 +9,8 @@ class BankAccount
     @status = status
   end
 
-  def deposit
-
+  def deposit(some_amount_of_money)
+    @balance += some_amount_of_money
   end
 
   def display_balance
@@ -23,5 +23,5 @@ class BankAccount
 
   def close_account
 
-  end 
+  end
 end
